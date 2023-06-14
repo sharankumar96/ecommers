@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="{% static 'css/intro.css'%}">
+
+    <style>
+        a {
+            text-decoration: none;
+            color: blue;
+            background-color: aqua;
+            font-size: 50px;
+
+        }
+
+        p {
+            color: brown;
+            background-color: aqua;
+            font-size: 50px;
+        }
+
+        #div {
+            width: 600px;
+            height: 200px;
+            background-color: blue;
+        }
+        .section1{
+            color: yellow;
+            background-color: black;
+            font-size:large;
+        }
+         /* selecter pseudo-class{...} */
+        a:hover{
+            color: yellow;
+            background-color: brown;
+            font-size: 150px;
+        }
+        /* selecter pseudo-element{...} */
+    </style>
+</head>
+
+<body>
+    <h1 style="color: blue;font-size: 30px; border: 1px solid red;">WELCOME HOME</h1>
+    <h2>cart</h2>
+    <h3>my order</h3>
+
+    <a href="{% url 'customer:c_home' %}">home</a>
+    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quas aliquam dicta, eligendi tempore, id iure
+        quibusdam dolores nobis ducimus corrupti vel modi ad neque repudiandae, labore quidem dolorum velit?</P>
+    <img src="{% static 'images/img1.png' %}" alt="" width="400" height="300">
+    <img src="{% static 'images/img2.png' %}" alt="" width="400">
+
+    <p style="color:royalblue; id="para1">ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos ab consequatur sunt modi provident
+        veniam doloribus dolore fugiat consequuntur!</p>
+
+    <div id="div1">
+        <h2 class="section1">Lorem ipsum dolor sit.</h2>
+        <h3 class="section1">Lorem ipsum dolor sit.</h3>
+        
+        <p class="section1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatum, quos sit eius error aperiam ea
+            illo consequuntur magnam esse veritatis dolorem cupiditate odit perspiciatis nesciunt nulla maxime iusto
+            voluptatibus laboriosam inventore itaque laborum eligendi? Sequi sunt provident, a, dolorum quod molestias,
+            animi dignissimos excepturi mollitia natus aut? Cupiditate ad eos soluta eaque iusto fugiat? Earum
+            voluptates tempore inventore voluptatibus dolorum ex nostrum dolore! Laudantium asperiores, repellendus
+            ratione voluptatum accusamus optio quos dolorum, aliquid odit ea harum accusantium aspernatur. At autem quod
+            molestias est eaque veritatis aliquam accusamus aperiam, repudiandae asperiores beatae ea ad, numquam
+            cupiditate ab velit. Ipsum, quis.</p>
+    </div>
+
+
+</body>
+
+</html>
